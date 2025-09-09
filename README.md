@@ -2,6 +2,8 @@
 
 An interactive web application that demonstrates the fundamental ornamental techniques (gamakas/alankaras) used in Indian classical music.
 
+![Screenshot of the application](screenshot.png)
+
 ## Features
 
 - Interactive demonstrations of 8 key ornamental techniques:
