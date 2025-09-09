@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Classical Music Ornamental Techniques</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Gamakas & Alankaras</h1>
+            <h2>Ornamental Techniques in Indian Classical Music</h2>
+        </header>
+
+        <div class="main-content">
+            <div class="techniques-container">
+                <div class="techniques-list">
+                    <ul>
+                        <li data-technique="meend" class="active">Meend (Glide)</li>
+                        <li data-technique="kan">Kan (Grace Note)</li>
+                        <li data-technique="krintan">Krintan (Shake)</li>
+                        <li data-technique="sparsh">Sparsh (Touch)</li>
+                        <li data-technique="andolan">Andolan (Oscillation)</li>
+                        <li data-technique="gamak">Gamak (Ornamental Phrase)</li>
+                        <li data-technique="murki">Murki (Turn)</li>
+                        <li data-technique="zamzama">Zamzama (Rapid Succession)</li>
+                    </ul>
+                </div>
+
+                <div class="technique-details">
+                    <div id="meend" class="technique-content active">
+                        <h3>Meend (Glide)</h3>
+                        <p>A smooth, continuous slide between two notes without breaking the sound. This creates a flowing connection between pitches and is essential for expressing the emotional content of ragas.</p>
+                        <div class="visualization">
+                            <div class="notation-display">
+                                <div class="notation-line">
+                                    <span class="note">Sa</span>
+                                    <span class="meend-line">→→→→→→→→→</span>
+                                    <span class="note">Pa</span>
+                                </div>
+                            </div>
+                            <button class="play-button" data-audio="meend">Play Example</button>
+                            <div class="interactive-area">
+                                <div class="string-container">
+                                    <div class="string"></div>
+                                    <div class="finger" id="meend-finger"></div>
+                                </div>
+                                <p class="instruction">Click and drag along the string to experience Meend</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="kan" class="technique-content">
+                        <h3>Kan (Grace Note)</h3>
+                        <p>A quick, light touch of an adjacent note before reaching the main note. It adds subtle color and helps define the character of specific ragas.</p>
+                        <div class="visualization">
+                            <div class="notation-display">
+                                <div class="notation-line">
+                                    <span class="note small">Re</span>
+                                    <span class="note">Ga</span>
+                                </div>
+                            </div>
+                            <button class="play-button" data-audio="kan">Play Example</button>
+                            <div class="interactive-area">
+                                <div class="string-container">
+                                    <div class="string"></div>
+                                    <div class="note-marker" id="kan-main"></div>
+                                    <div class="note-marker small" id="kan-grace"></div>
+                                </div>
+                                <p class="instruction">Click the grace note then the main note to hear Kan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="krintan" class="technique-content">
+                        <h3>Krintan (Shake)</h3>
+                        <p>A rapid oscillation or vibrato on a single note, creating a trembling effect. This technique adds intensity and emotional depth to sustained notes.</p>
+                        <div class="visualization">
+                            <div class="notation-display">
+                                <div class="notation-line">
+                                    <span class="note">Ma</span>
+                                    <span class="vibrato-line">≈≈≈≈≈≈≈≈≈</span>
+                                </div>
+                            </div>
+                            <button class="play-button" data-audio="krintan">Play Example</button>
+                            <div class="interactive-area">
+                                <div class="string-container">
+                                    <div class="string"></div>
+                                    <div class="finger shake" id="krintan-finger"></div>
+                                </div>
+                                <p class="instruction">Click and hold on the string to experience Krintan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="sparsh" class="technique-content">
+                        <h3>Sparsh (Touch)</h3>
+                        <p>A brief, gentle touching of a note, often used to approach the main note from above or below. It's more subtle than a full grace note.</p>
+                        <div class="visualization">
+                            <div class="notation-display">
+                                <div class="notation-line">
+                                    <span class="note touch">Dha</span>
+                                    <span class="note">Ni</span>
+                                </div>
+                            </div>
+                            <button class="play-button" data-audio="sparsh">Play Example</button>
+                            <div class="interactive-area">
+                                <div class="string-container">
+                                    <div class="string"></div>
+                                    <div class="note-marker" id="sparsh-main"></div>
+                                    <div class="note-marker touch" id="sparsh-touch"></div>
+                                </div>
+                                <p class="instruction">Tap lightly on the touch note then the main note</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="andolan" class="technique-content">
+                        <h3>Andolan (Oscillation)</h3>
+                        <p>A controlled wavering between two adjacent notes, creating a rocking motion. This is particularly important in expressing certain ragas' emotional qualities.</p>
+                        <div class="visualization">
+                            <div class="notation-display">
+                                <div class="notation-line">
+                                    <span class="note">Ga</span>
+                                    <span class="wave-line">∿∿∿∿∿∿∿∿∿</span>
+                                    <span class="note">Ma</span>
+                                </div>
+                            </div>
+                            <button class="play-button" data-audio="andolan">Play Example</button>
+                            <div class="interactive-area">
+                                <div class="string-container">
+                                    <div class="string"></div>
+                                    <div class="finger wave" id="andolan-finger"></div>
+                                </div>
+                                <p class="instruction">Click and move slightly back and forth to experience Andolan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="gamak" class="technique-content">
+                        <h3>Gamak (Ornamental Phrase)</h3>
+                        <p>Complex melodic phrases that embellish the basic structure of a raga. These can include combinations of various ornamental techniques.</p>
+                        <div class="visualization">
+                            <div class="notation-display">
+                                <div class="notation-line complex">
+                                    <span class="note">Sa</span>
+                                    <span class="note">Re</span>
+                                    <span class="note">Ga</span>
+                                    <span class="note">Ma</span>
+                                    <span class="curve-line">⌒</span>
+                                </div>
+                            </div>
+                            <button class="play-button" data-audio="gamak">Play Example</button>
+                            <div class="interactive-area">
+                                <div class="string-container">
+                                    <div class="string"></div>
+                                    <div class="note-sequence" id="gamak-sequence"></div>
+                                </div>
+                                <p class="instruction">Click the sequence button to play the Gamak phrase</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="murki" class="technique-content">
+                        <h3>Murki (Turn)</h3>
+                        <p>Quick decorative runs or turns around a main note, adding brilliance and complexity to the melodic line.</p>
+                        <div class="visualization">
+                            <div class="notation-display">
+                                <div class="notation-line">
+                                    <span class="note">Pa</span>
+                                    <span class="turn-symbol">♫</span>
+                                    <span class="note">Dha</span>
+                                </div>
+                            </div>
+                            <button class="play-button" data-audio="murki">Play Example</button>
+                            <div class="interactive-area">
+                                <div class="string-container">
+                                    <div class="string"></div>
+                                    <div class="turn-marker" id="murki-turn"></div>
+                                </div>
+                                <p class="instruction">Click on the turn marker to experience Murki</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="zamzama" class="technique-content">
+                        <h3>Zamzama (Rapid Succession)</h3>
+                        <p>Fast alternation between notes, creating a cascading or rippling effect in the melody.</p>
+                        <div class="visualization">
+                            <div class="notation-display">
+                                <div class="notation-line">
+                                    <span class="note">Sa</span>
+                                    <span class="note">Re</span>
+                                    <span class="note">Sa</span>
+                                    <span class="note">Re</span>
+                                    <span class="note">Sa</span>
+                                    <span class="note">Re</span>
+                                </div>
+                            </div>
+                            <button class="play-button" data-audio="zamzama">Play Example</button>
+                            <div class="interactive-area">
+                                <div class="string-container">
+                                    <div class="string"></div>
+                                    <div class="rapid-marker" id="zamzama-rapid"></div>
+                                </div>
+                                <p class="instruction">Click rapidly between the markers to experience Zamzama</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Interactive Tool for Learning Indian Classical Music Ornamental Techniques</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</body>
+</html>

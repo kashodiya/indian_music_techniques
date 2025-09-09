@@ -1,0 +1,17 @@
+Server started at http://localhost:54330
+127.0.0.1 - - [09/Sep/2025 22:33:37] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2025 22:33:37] "GET /css/styles.css HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2025 22:33:37] "GET /js/script.js HTTP/1.1" 200 -
+172.17.0.1 - - [09/Sep/2025 22:33:52] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [09/Sep/2025 22:33:52] "GET /css/styles.css HTTP/1.1" 200 -
+172.17.0.1 - - [09/Sep/2025 22:33:52] "GET /js/script.js HTTP/1.1" 200 -
+172.17.0.1 - - [09/Sep/2025 22:33:52] code 404, message File not found
+172.17.0.1 - - [09/Sep/2025 22:33:52] "GET /favicon.ico HTTP/1.1" 404 -
+172.17.0.1 - - [09/Sep/2025 22:37:47] "GET / HTTP/1.1" 304 -
+172.17.0.1 - - [09/Sep/2025 22:37:47] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [09/Sep/2025 22:37:47] "GET /css/styles.css HTTP/1.1" 304 -
+172.17.0.1 - - [09/Sep/2025 22:37:47] "GET /js/script.js HTTP/1.1" 304 -
+172.17.0.1 - - [09/Sep/2025 22:38:51] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [09/Sep/2025 22:39:00] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [09/Sep/2025 22:39:00] "GET /css/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [09/Sep/2025 22:39:00] "GET /js/script.js HTTP/1.1" 304 -
